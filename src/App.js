@@ -3,10 +3,10 @@ import './App.scss';
 import ReactPlayer from 'react-player';
 import Modal from 'react-modal';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaRegPlayCircle, FaComments} from "react-icons/fa";
-
+import { useHistory } from "react-router-dom";
 
 const App = () => {
-
+  const history = useHistory();
   const [play, setPlay] = React.useState(false);
   const [button, setButton] = React.useState("playVideo")
   const url = play
@@ -67,15 +67,15 @@ const App = () => {
           <div>
             <div className="modalTitle">
               <h3 className="realtitle">Services & Accompagnements</h3>
-              <h3 className="realtitle green">Faites Grandir vos projets</h3>
+              <h3 className="realtitle green" onClick={() => history.push("/Expertise")}>Faites Grandir vos projets</h3>
             </div>
             <div className="modalTitle">
               <h3 className="realtitle">Passions & Chatons</h3>
-              <h3 className="realtitle green">Rencontrez notre équipe</h3>
+              <h3 className="realtitle green" onClick={() => history.push("/Lequipe")}>Rencontrez notre équipe</h3>
             </div>
             <div className="modalTitle">
               <h3 className="realtitle">Wouah</h3>
-              <h3 className="realtitle green">Découvrez nos travaux</h3>
+              <h3 className="realtitle green" onClick={() => history.push("/Portefolio")}>Découvrez nos travaux</h3>
             </div>
             <div className="reseaux">
               <a href="https://www.facebook.com/bigbizyou" className="reseaux-setup">

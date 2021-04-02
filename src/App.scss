@@ -26,12 +26,13 @@
     margin: 2rem 0;
     overflow: hidden;
     text-transform: uppercase;
+    cursor: pointer;
     .green {
       color: #00ff00;
     }
     &:hover .realtitle {
       transform: translateY(-140%);
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
     }
   }
   .reseaux {
@@ -221,7 +222,12 @@
     }
     .hoverInfos {
       position: relative;
+      opacity: 1;
       transition: all 0.3s ease-in;
+      img{
+        opacity: 1;
+        transition: all 0.3s ease-in;
+      }
       .textHidden {
         position: absolute;
         top: 5rem;
@@ -229,6 +235,7 @@
         left: 0;
         width: 15rem;
         opacity: 0;
+        transition: all 0.3s ease-in;
         text-align: left;
       }
     }

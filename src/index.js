@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Lequipe from "./components/Lequipe.js";
+import Expertise from "./components/Expertise.js";
+import Portefolio from "./components/Portefolio.js";
+
 import './index.css';
 import App from './App';
 
@@ -16,6 +20,9 @@ const Root = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={App}/>
+        <Route path="/Lequipe" component={Lequipe}/>
+        <Route path="/Expertise" component={Expertise}/>
+        <Route path="/Portefolio" component={Portefolio}/>
       </Switch>
     </Router>
   )
