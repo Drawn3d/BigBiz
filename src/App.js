@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaRegPlayCircle, FaComments} from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 
+
 const App = () => {
   const history = useHistory();
   const [play, setPlay] = React.useState(false);
@@ -210,7 +211,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section id="window4">
+      <section id="window5">
         <div className="listeSite">
           <div className="container-image-site">
             <div className="image-site">
