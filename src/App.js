@@ -157,7 +157,7 @@ const App = () => {
             <span className="scroll">UX Designers ?</span>
             <span className="scroll">Agence de publicité ?</span>
             <span className="scroll">Agence de communication ?</span>
-            <span className="scroll">Agence de marketing digital ?</span>
+            <span className="scroll">Marketing digital ?</span>
             <span className="scroll">Cabinet de conseil ?</span>
             <span className="scroll">Régie d'experts ?</span>
             <span className="scroll">Agence SEO ?</span>
